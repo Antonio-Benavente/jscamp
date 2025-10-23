@@ -12,16 +12,23 @@ class DevJobsAvatar extends HTMLElement {
   render() {
     const service = this.getAttribute('service') ?? 'github'
     const username = this.getAttribute('username') ?? 'midudev'
-    const size = this.getAttribute('size') ?? '40'
+    const size = this.getAttribute('size') ?? '36'
 
     const url = this.createUrl(service, username)
 
     this.shadowRoot.innerHTML = `
     <style>
+      :host {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
       img {
         width: ${size}px;
         height: ${size}px;
         border-radius: 9999px;
+        display: block;
       }
     </style>
 

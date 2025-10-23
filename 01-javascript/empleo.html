@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>DevJobs - Empleo</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Empleo seleccionado" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/empleo.css" />
+  <script type="module" src="js/detalle-empleo.js"></script>
+  <script type="module" src="js/components/devjobs-avatar-element.js"></script>
+</head>
+
+<body>
+  <header class="jobs-header">
+    <div class="jobs-nav">
+      <div class="title-header">
+        <svg width="36" height="36" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd"
+            d="M12.08 24 4 19.248 9.955 8.752l8.085 4.744L18.045 4h11.91l.005 9.496 8.085-4.744L44 19.248 35.92 24 44 28.752l-5.955 10.496-8.085-4.744L29.955 44h-11.91l-.005-9.496-8.085 4.744L4 28.752z"
+            fill="#1f8fff" fill-rule="evenodd" />
+        </svg>
+        <h2>DevJobs</h2>
+      </div>
+
+      <nav class="job-li">
+        <a href="index.html">Inicio</a>
+        <a href="empleos.html">Empleos</a>
+        <a href="">Empresas</a>
+        <a href="">Salarios</a>
+      </nav>
+    </div>
+
+    <div class="job-buttons">
+      <a class="job-a" href="">Subir CV</a>
+      <devjobs-avatar service="google" username="google.com" size="36">
+      </devjobs-avatar>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="section-empleo">
+      <div class="job-slash">
+        <a href="empleos.html" >Empleos</a>
+        <p>/</p>
+        <h3 id="empleo-slash">empleo</h3>
+      </div>
+      <div class="job-details">
+        <div class="job-head">
+          <div>
+            <h1 id="title">TITULO</h1>
+            <p id="details">Compañia</p>
+          </div>
+          <button class="aplicar-btn">Aplicar ahora</button>
+        </div>
+        <div class="job-body">
+          <div>
+            <h2>Descripcion del puesto</h2>
+            <p id="description">description</d>
+
+          </div>
+          <div>
+            <h2>Responsabilidades</h2>
+            <div id="responsabilidades"></div>
+
+          </div>
+          <div>
+            <h2>Requisitos</h2>
+            <div id="requisitos"></div>
+
+          </div>
+          <div>
+            <h2>Acerca de la empresa</h2>
+            <p id="acerca">acerca de</p>
+
+          </div>
+        </div>
+        <button class="aplicar-btn">Aplicar ahora</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
+  </footer>
+</body>
+
+</html>
